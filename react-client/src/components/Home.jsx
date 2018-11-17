@@ -73,7 +73,7 @@ class Home extends Component {
           <div className='input-row'>
             <div>
               <h2 >Date</h2>
-              <input id="date" type="month" name="date" onChange={this.onChange}></input>
+              <input type="month" name="date" onChange={this.onChange}></input>
             </div>
             <div>
               <h2 >Amount</h2>
@@ -86,7 +86,7 @@ class Home extends Component {
                   <option value="entertainment">Entertainment</option>
                   <option value="taxes">Taxes</option>
                   <option value="repair">Repair & Maintenance</option>
-                  <option value="elec-water">Electricity & Water fees</option>
+                  <option value="fees">Electricity & Water fees</option>
                 </select>
             </div>
             <button onClick={this.addExpense}>Add</button>

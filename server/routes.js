@@ -35,8 +35,7 @@ Router.route("/categories")
 
 Router.route("/subtotal/:category")
     .get(function (req, res) {
-        console.log(req.url)
-        res.send('wtf')
-        // res.sendFile(path.join(__dirname, "../react-client/dist/index.html"))
+      expenseController.getExpensesByCategory(req,res)
+
     })
 module.exports = Router

@@ -29,11 +29,11 @@ class Subtotal extends Component {
     console.log(this.props);
   }
   render () {
-
+    var categoryTitle=window.location.pathname.slice(window.location.pathname.lastIndexOf('/')+1)
     console.log(this.state);
     return (
-      <div>
-        <h1>Category</h1>
+      <div className='subtotal-layout'>
+        <h1>{categoryTitle}</h1>
         <div className='months'>
           <div>
             <p>Jans</p>
